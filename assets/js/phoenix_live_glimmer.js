@@ -1,3 +1,4 @@
+globalThis[Symbol.for('GLIMMER_VALIDATOR_REGISTRATION')] = false;
 import Component from '@glimmerx/component';
 import { renderComponent } from '@glimmerx/core';
 const render = function(el, target, componentClass, additionalArgs = {}, previousArgs = {}) {
