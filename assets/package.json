@@ -7,7 +7,7 @@
     "parcel-bundler": "^1.12.5"
   },
   "peerDependencies": {
-    "@glimmerx/component": "^0.6.0",
-    "@glimmerx/core": "^0.6.0"
+    "@glimmerx/component": "^0.4.2",
+    "@glimmerx/core": "^0.4.2"
   }
 }
