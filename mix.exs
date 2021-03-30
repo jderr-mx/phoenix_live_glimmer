@@ -32,14 +32,14 @@ defmodule PhoenixLiveGlimmer.MixProject do
 
   def description do
     """
-    A helper library for easily rendering React components in
+    A helper library for easily rendering Glimmer components in
     Phoenix LiveView views.
     """
   end
 
   defp package do
     [
-      name: :phoenix_live_react,
+      name: :phoenix_live_glimmer,
       files: ["lib", "priv", "mix.exs", "package.json", "README*", "LICENSE*"],
       maintainers: ["John Derr"],
       licenses: ["MIT"],
