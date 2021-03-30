@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Hook to render live glimmer components in Phoenix LiveView.",
   "license": "MIT",
-  "main": "./priv/static/phoenix_live_glimmer.js",
+  "main": "./assets/js/phoenix_live_glimmer.js",
   "author": "John Derr",
   "repository": {
     "type": "git",
@@ -13,7 +13,6 @@
     "README.md",
     "LICENSE.md",
     "package.json",
-    "priv/static/phoenix_live_glimmer.js",
     "assets/js/phoenix_live_glimmer.js"
   ]
 }
