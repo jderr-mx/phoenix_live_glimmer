@@ -1,4 +1,3 @@
-globalThis[Symbol.for('GLIMMER_VALIDATOR_REGISTRATION')] = false;
 import Component from '@glimmerx/component';
 import { renderComponent } from '@glimmerx/core';
 const render = function(el, target, componentClass, additionalArgs = {}, previousArgs = {}) {
@@ -8,6 +7,7 @@ const render = function(el, target, componentClass, additionalArgs = {}, previou
   } else {
     args = {...args, ...additionalArgs}
   }
+  globalThis[Symbol.for('GLIMMER_VALIDATOR_REGISTRATION')] = false;
   renderComponent(componentClass, {element: target, args})
   return args;
 }
