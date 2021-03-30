@@ -1,16 +1,16 @@
 defmodule PhoenixLiveGlimmer do
   @moduledoc """
-  Render React.js components in Phoenix LiveView views.
+  Render Glimmer.js components in Phoenix LiveView views.
   """
 
   import Phoenix.HTML
   import Phoenix.HTML.Tag
 
   @doc """
-  Render a react component in a live view.
+  Render a glimmer component in a live view.
 
   ```
-  <%= PhoenixLiveReact.live_react_component("Components.MyComponent", %{name: "Bob"}, id: "my-component-1") %>
+  <%= PhoenixLiveGlimmer.live_glimmer_component("Components.MyComponent", %{name: "Bob"}, id: "my-component-1") %>
   ```
 
   ## Events
@@ -34,7 +34,7 @@ defmodule PhoenixLiveGlimmer do
   ## Parameters
 
     - name: String with the module name of the component
-    - props: Map or keyword list with the props for the react component
+    - props: Map or keyword list with the props for the glimmer component
     - options: Keyword list with render options
 
   It is possible to override both the receiver and the container div's attributes by passing
@@ -47,7 +47,7 @@ defmodule PhoenixLiveGlimmer do
 
   ```
   <%=
-    PhoenixLiveReact.live_react_component("Components.MyComponent", %{},
+    PhoenixLiveGlimmer.live_glimmer_component("Components.MyComponent", %{},
       id: "my-component-1",
       container: [class: "my-component"],
       container_tag: :p

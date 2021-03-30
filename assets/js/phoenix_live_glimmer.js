@@ -1,5 +1,6 @@
 import Component from '@glimmerx/component';
 import { renderComponent } from '@glimmerx/core';
+
 const render = function(el, target, componentClass, additionalArgs = {}, previousArgs = {}) {
   let args = el.dataset.liveGlimmerArgs ? JSON.parse(el.dataset.liveGlimmerArgs) : {};
   if (el.dataset.liveGlimmerMerge) {
@@ -7,6 +8,7 @@ const render = function(el, target, componentClass, additionalArgs = {}, previou
   } else {
     args = {...args, ...additionalArgs}
   }
+  // https://github.com/glimmerjs/glimmer-vm/issues/1252
   globalThis[Symbol.for('GLIMMER_VALIDATOR_REGISTRATION')] = false;
   renderComponent(componentClass, {element: target, args})
   return args;
@@ -40,9 +42,8 @@ const LiveGlimmer = {
     if (el.dataset.liveGlimmerMerge) this.args = args
   },
 
+//   TODO cleanup?
 //  destroyed() {
-//    const { target } = this;
-//    ReactDOM.unmountComponentAtNode(target);
 //  }
 }
 

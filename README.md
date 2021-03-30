@@ -1,8 +1,12 @@
 # PhoenixLiveGlimmer
 
-**TODO: Add description**
+User GlimmerJS in your Live View App
+
+Borrows liberally from [phoenix_live_react](https://github.com/fidr/phoenix_live_react) 
 
 ## Installation
+
+TODO: Publish it as a Hex package
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `phoenix_live_glimmer` to your list of dependencies in `mix.exs`:
@@ -10,7 +14,7 @@ by adding `phoenix_live_glimmer` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:phoenix_live_glimmer, "~> 0.1.0"}
+    {:phoenix_live_glimmer, git: "https://github.com/jderr-mx/phoenix_live_glimmer.git"}
   ]
 end
 ```
