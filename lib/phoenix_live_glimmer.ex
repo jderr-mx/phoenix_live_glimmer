@@ -98,7 +98,7 @@ defmodule PhoenixLiveGlimmer do
         id -> "#{id}-container"
       end
 
-    default_attr = ["#{binding_prefix}update": "replace", id: id]
+    default_attr = ["#{binding_prefix}update": "ignore", id: id]
 
     content_tag(tag, "", Keyword.merge(default_attr, attr))
   end
