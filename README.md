@@ -1,6 +1,6 @@
 # PhoenixLiveGlimmer
 
-User GlimmerJS in your Live View App
+Use GlimmerJS in your Live View App
 
 Borrows liberally from [phoenix_live_react](https://github.com/fidr/phoenix_live_react) 
 
